@@ -1,0 +1,17 @@
+.Content h3{
+    color: #3f0000;
+}
+
+.yellow, .blue{
+    display: block;
+    cursor: pointer;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
