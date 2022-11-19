@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WEB-lab7/static/css/main.372059ef.css",
+    "main.js": "/WEB-lab7/static/js/main.69505432.js",
+    "index.html": "/WEB-lab7/index.html",
+    "main.372059ef.css.map": "/WEB-lab7/static/css/main.372059ef.css.map",
+    "main.69505432.js.map": "/WEB-lab7/static/js/main.69505432.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.372059ef.css",
+    "static/js/main.69505432.js"
+  ]
+}
