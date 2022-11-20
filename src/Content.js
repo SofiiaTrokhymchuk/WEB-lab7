@@ -8,20 +8,12 @@ class Content extends Component {
       drawingIsYellow: true,
       photographingIsBlue: true,
     };
-    this.changeBackgroundDrawing = this.changeBackgroundDrawing.bind(this);
-    this.changeBackgroundPhotographing =
-      this.changeBackgroundPhotographing.bind(this);
+    this.changeBackground = this.changeBackground.bind(this);
   }
 
-  changeBackgroundDrawing() {
+  changeBackground(elemState) {
     this.setState({
-      drawingIsYellow: !this.state.drawingIsYellow,
-    });
-  }
-
-  changeBackgroundPhotographing() {
-    this.setState({
-      photographingIsBlue: !this.state.photographingIsBlue,
+      [elemState]: !this.state[elemState],
     });
   }
 
@@ -34,7 +26,7 @@ class Content extends Component {
           <li>
             <span
               className={this.state.drawingIsYellow ? "yellow" : "blue"}
-              onClick={this.changeBackgroundDrawing}
+              onClick={() => this.changeBackground("drawingIsYellow")}
             >
               Малювання
             </span>
@@ -42,7 +34,7 @@ class Content extends Component {
           <li>
             <span
               className={this.state.photographingIsBlue ? "blue" : "yellow"}
-              onClick={this.changeBackgroundPhotographing}
+              onClick={() => this.changeBackground("photographingIsBlue")}
             >
               Фотографії
             </span>
