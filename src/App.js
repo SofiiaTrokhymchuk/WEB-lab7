@@ -3,6 +3,8 @@ import Content from "./Content";
 import Header from "./Header";
 import Image from "./Image";
 import Task from "./Task";
+import { PRODUCTS } from "./data/products";
+import GoodsCard from "./GoodsCard";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Content />
       <Image />
       <Task taskNumber="2" />
+      <GoodsCard products={PRODUCTS} />
     </div>
   );
 }
